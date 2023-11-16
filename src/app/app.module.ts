@@ -14,6 +14,8 @@ import { ServicePersonas } from './services/service.personas';
 import { PersonasapiComponent } from './components/personasapi/personasapi.component';
 import { ServiceCoches } from './services/service.coches';
 import { CochesComponent } from './components/coches/coches.component';
+import { PlantillafuncionesComponent } from './components/plantillafunciones/plantillafunciones.component';
+import { ServicePlantillas } from './services/service.plantillas';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,8 @@ import { CochesComponent } from './components/coches/coches.component';
     HomeComponent,
     MenuComponent,
     PersonasapiComponent,
-    CochesComponent
+    CochesComponent,
+    PlantillafuncionesComponent
   ],
   imports: [
     HttpClientModule
@@ -32,7 +35,7 @@ import { CochesComponent } from './components/coches/coches.component';
     , routing
   ],
   providers: [appRoutingProvider
-    , ServiceComics, ServicePersonas, ServiceCoches],
+    , ServiceComics, ServicePersonas, ServiceCoches, ServicePlantillas],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
